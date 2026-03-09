@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TestiCreame | Buy Now</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+<style>
+
+/* ===== GLOBAL ===== */
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fdfdfd;
+}
+
+/* Navbar */
+nav{
+    background:white;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+.navbar-brand{
+    font-size:1.8rem;
+    font-weight:700;
+    color:#ff477e !important;
+}
+
+/* Page Header */
+.page-header{
+    background:linear-gradient(135deg,#ff477e,#ff85a2);
+    color:white;
+    padding:70px 0;
+    text-align:center;
+}
+.page-header h1{
+    font-weight:700;
+}
+.page-header p{
+    font-size:1.2rem;
+}
+
+/* Checkout */
+.checkout-card{
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+    padding:30px;
+    margin-bottom:30px;
+    background:white;
+}
+.checkout-card h5{
+    font-weight:700;
+    color:#ff477e;
+    margin-bottom:20px;
+}
+.checkout-card .form-control{
+    border-radius:10px;
+    margin-bottom:15px;
+}
+.checkout-card button{
+    background:#ff477e;
+    color:white;
+    border-radius:30px;
+    padding:10px 25px;
+    transition:0.3s;
+}
+.checkout-card button:hover{
+    background:#e62b6f;
+    transform:scale(1.05);
+}
+
+/* Cart Table */
+.table th, .table td{
+    vertical-align: middle;
+}
+.table img{
+    height:60px;
+    width:60px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:#ccc;
+    padding:25px 0;
+}
+footer i{
+    color:#ff477e;
+    margin:0 8px;
+}
+
+@media(max-width:768px){
+    .page-header h1{
+        font-size:2rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand" href="index.html">
+<i class="fa-solid fa-ice-cream me-2"></i>TestiCreame
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="flavours.html">Flavours</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header mt-5">
+<div class="container">
+<h1>Buy Now</h1>
+<p>Complete your order in a few simple steps</p>
+</div>
+</section>
+
+<!-- Checkout Section -->
+<section class="container py-5">
+<div class="row g-4">
+
+<!-- Cart Summary -->
+<div class="col-lg-6">
+<div class="checkout-card">
+<h5>Cart Summary</h5>
+<table class="table">
+<thead>
+<tr>
+<th>Product</th>
+<th>Name</th>
+<th>Price</th>
+<th>Qty</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://images.pexels.com/photos/3026805/pexels-photo-3026805.jpeg" alt=""></td>
+<td>Vanilla</td>
+<td>₹199</td>
+<td>1</td>
+<td>₹199</td>
+</tr>
+<tr>
+<td><img src="https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg" alt=""></td>
+<td>Chocolate</td>
+<td>₹229</td>
+<td>2</td>
+<td>₹458</td>
+</tr>
+<tr>
+<td colspan="4" class="text-end fw-bold">Total</td>
+<td class="fw-bold">₹657</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- Billing Details -->
+<div class="col-lg-6">
+<div class="checkout-card">
+<h5>Billing Details</h5>
+<form>
+<input type="text" class="form-control" placeholder="Full Name" required>
+<input type="email" class="form-control" placeholder="Email Address" required>
+<input type="text" class="form-control" placeholder="Phone Number" required>
+<input type="text" class="form-control" placeholder="Address" required>
+<select class="form-control" required>
+<option selected disabled>Select Payment Method</option>
+<option>Credit/Debit Card</option>
+<option>UPI / Wallet</option>
+<option>Cash on Delivery</option>
+</select>
+<button type="submit">Place Order</button>
+</form>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+<div class="container">
+<p>© 2026 TestiCreame | Designed by Neeraj Kumar Maurya</p>
+<div>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

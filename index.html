@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>TestiCreame — Premium Ice Cream</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+<style>
+
+/* ===== GLOBAL STYLES ===== */
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#fff;
+    color:#333;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    backdrop-filter:blur(8px);
+    background:rgba(255,255,255,0.8);
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+.navbar-brand{
+    font-size:1.8rem;
+    font-weight: bold;
+    color:#ff477e;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:85vh;
+    background: url('https://images.pexels.com/photos/5725606/pexels-photo-5725606.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1500');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+.hero h1{
+    font-size:4rem;
+    font-weight:700;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.6);
+}
+.hero p{
+    font-size:1.3rem;
+    margin-bottom:25px;
+}
+
+/* ===== BUTTON ===== */
+.btn-test{
+    background:#ff477e;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:500;
+    transition:0.3s;
+}
+.btn-test:hover{
+    background:#e62b6f;
+    transform:scale(1.07);
+}
+
+/* ===== PRODUCT CARDS ===== */
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+.card-img-top{
+    height:220px;
+    object-fit:cover;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#222;
+    color:#ddd;
+    padding:25px 0;
+}
+footer i{
+    color:#ff477e;
+    margin:0 8px;
+    font-size:1.2rem;
+    transition:0.3s;
+}
+footer i:hover{
+    transform:scale(1.2);
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.6rem;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+    <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-ice-cream me-2"></i>TestiCreame
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="flavours.html">Flavours</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+<div class="text-center">
+    <h1>Welcome to TestiCreame</h1>
+    <p>Indulge in the creamy, dreamy taste of our premium ice cream 🍦</p>
+    <a href="#products" class="btn btn-test">Explore Flavours</a>
+</div>
+</section>
+
+<!-- PRODUCT SECTION -->
+<section id="products" class="container py-5">
+<h2 class="text-center mb-4">Featured Flavours</h2>
+<div class="row g-4">
+
+    <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card shadow">
+            <img src="https://images.pexels.com/photos/3026805/pexels-photo-3026805.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="card-img-top">
+            <div class="card-body text-center">
+                <h5 class="card-title">Classic Vanilla</h5>
+                <p class="text-danger fw-bold">₹199</p>
+                <a href="buy.html" class="btn btn-test btn-sm">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card shadow">
+            <img src="https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="card-img-top">
+            <div class="card-body text-center">
+                <h5 class="card-title">Chocolate Bliss</h5>
+                <p class="text-danger fw-bold">₹229</p>
+                <a href="buy.html" class="btn btn-test btn-sm">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card shadow">
+            <img src="https://images.pexels.com/photos/3026809/pexels-photo-3026809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="card-img-top">
+            <div class="card-body text-center">
+                <h5 class="card-title">Strawberry Dream</h5>
+                <p class="text-danger fw-bold">₹199</p>
+                <a href="buy.html" class="btn btn-test btn-sm">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card shadow">
+            <img src="https://images.pexels.com/photos/3026810/pexels-photo-3026810.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="card-img-top">
+            <div class="card-body text-center">
+                <h5 class="card-title">Mango Magic</h5>
+                <p class="text-danger fw-bold">₹209</p>
+                <a href="buy.html" class="btn btn-test btn-sm">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+<div class="container">
+    <p>&copy; 2026 TestiCreame | Designed by Neeraj Kumar Maurya</p>
+    <div>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>
